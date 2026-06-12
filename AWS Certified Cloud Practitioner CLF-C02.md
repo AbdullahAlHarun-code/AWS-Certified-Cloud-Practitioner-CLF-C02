@@ -1,0 +1,297 @@
+# AWS Certified Cloud Practitioner CLF-C02
+
+Bangla mentor notes for the Udemy course: **[NEW] Ultimate AWS Certified Cloud Practitioner CLF-C02 2026**.
+
+## How To Use These Notes
+
+- প্রতিটি lecture শেষ করার পর এই file-এ নতুন section যোগ করা হবে।
+- শুধু transcript পড়া নয়; প্রতিটি lecture-এর idea, practical example, exam mindset, আর senior engineer advice রাখা হবে।
+- AWS শেখার সময় লক্ষ্য হবে: service মুখস্থ করা নয়, কোন service কোন problem solve করে সেটা বোঝা।
+
+---
+
+## Lecture 1: Course Introduction
+
+### Lecture Summary
+
+এই lecture-এ instructor course-এর উদ্দেশ্য explain করেছেন। আমরা **AWS Certified Cloud Practitioner CLF-C02** exam-এর জন্য prepare করব। এটা AWS-এর foundational level certification, কিন্তু একেবারে সহজ ভেবে হালকা নেওয়া যাবে না।
+
+AWS-এ ২০০+ service আছে। এই course-এ exam এবং real-world foundation-এর জন্য গুরুত্বপূর্ণ প্রায় ৪০+ AWS service শেখানো হবে।
+
+### Key Ideas
+
+- Exam code: **CLF-C02**
+- Certification level: **Foundational**
+- Course beginner-friendly
+- Theory এবং hands-on দুটোই থাকবে
+- সব AWS service শেখানো হবে না; core service শেখানো হবে
+- Exam-এ wrong option বা distractor থাকতে পারে
+
+### Mentor Explanation
+
+AWS শেখার সময় শুরুতে সব service মুখস্থ করার চেষ্টা করবেন না। আগে বুঝবেন:
+
+- Cloud কী
+- AWS account কীভাবে কাজ করে
+- Compute, storage, database, networking, security কী
+- কোন AWS service কোন problem solve করে
+
+এই foundation exam এবং real-world কাজ দুটোতেই কাজে লাগবে।
+
+### Example
+
+ধরুন আপনার একটা ছোট web app আছে।
+
+- Local laptop-এ চালালে শুধু আপনার machine-এ চলে।
+- AWS EC2-তে চালালে সেটা cloud server-এ run করবে।
+- User বেশি হলে cloud infrastructure scale করা সহজ হয়।
+
+### Exam Mindset
+
+Sample question:
+
+**Database AWS-এ migrate করতে কোন service ব্যবহার করা উচিত?**
+
+Options:
+
+- Storage Gateway
+- Database Migration Service
+- EC2
+- AppStream 2.0
+
+Correct idea: **AWS Database Migration Service**, কারণ database migrate করার জন্য dedicated service আছে।
+
+Keyword mapping:
+
+- `database migration` -> AWS DMS
+- `virtual server` -> EC2
+- `object storage` -> S3
+- `user permission/access` -> IAM
+
+### Senior Engineer Advice
+
+একটা AWS service শেখার সময় সবসময় এই প্রশ্ন করবেন:
+
+> এই service কোন problem solve করে?
+
+এই habit তৈরি হলে exam-এর distractor option ধরতে পারবেন।
+
+### Mini Quiz
+
+1. Cloud Practitioner exam code কী?
+   - CLF-C02
+2. AWS DMS কোন কাজে লাগে?
+   - Database migration করতে।
+3. EC2 কী?
+   - Cloud-এর virtual server।
+4. IAM কী manage করে?
+   - User, permission, এবং access control।
+
+---
+
+## Lecture 2: Creating an AWS Account
+
+### Lecture Summary
+
+এই lecture-এ AWS account তৈরি করার process দেখানো হয়েছে। এখানে root user email, password, account plan, credit card verification, phone verification, support plan, এবং AWS Console sign-in explain করা হয়েছে।
+
+### Key Ideas
+
+- AWS account-এর main owner হলো **root user**
+- Root user email দিয়ে account তৈরি হয়
+- Strong password দরকার
+- Learning-এর জন্য free plan যথেষ্ট
+- Free plan হলেও card verification লাগতে পারে
+- Basic Support plan learning-এর জন্য enough
+- AWS Console হলো web dashboard
+
+### Mentor Explanation
+
+AWS account তৈরি করা মানে শুধু একটা website account বানানো না। এটা আপনার cloud environment-এর main door তৈরি করা।
+
+এই account দিয়ে আপনি পরে manage করবেন:
+
+- EC2 server
+- S3 storage
+- Database
+- IAM users
+- Billing
+- Security settings
+
+### Root User
+
+Root user হলো AWS account-এর সবচেয়ে powerful user।
+
+Analogy:
+
+- AWS account = office building
+- Root user = building owner/master key holder
+- IAM user = employee badge
+- Permission = কোন room-এ ঢুকতে পারবে
+
+Root user দিয়ে daily কাজ করা ভালো practice না। পরে IAM user/admin user বানিয়ে কাজ করা উচিত।
+
+### Free Plan vs Paid Plan
+
+Free plan:
+
+- Learning-এর জন্য safe
+- Credit শেষ হলে account বন্ধ হতে পারে
+- Course follow করার জন্য যথেষ্ট
+
+Paid plan:
+
+- Production workload-এর জন্য
+- Credit শেষ হলে card charge হতে পারে
+- Real business/project চালানোর জন্য দরকার
+
+আপনার জন্য এখন best choice: **Free plan**।
+
+### Credit Card কেন লাগে
+
+Free plan হলেও AWS card চাইতে পারে। এর কারণ:
+
+- Account verification
+- Fraud prevention
+
+ছোট verification authorization হতে পারে, যেমন $1, যা পরে refund/release হয়।
+
+### Practical Safety Checklist
+
+- Root password password manager-এ রাখুন
+- MFA enable করুন
+- Basic Support plan রাখুন
+- Billing alert setup করুন
+- Practice শেষে resource cleanup করুন
+- Root user কম ব্যবহার করুন
+
+### Example
+
+AWS account হলো নতুন factory ভাড়া নেওয়ার মতো:
+
+- Root user = factory owner
+- Credit card = billing contract
+- Phone verification = identity check
+- Support plan = maintenance support level
+- AWS Console = factory control room
+- Free plan = training mode
+
+### Mini Quiz
+
+1. Root user কেন powerful?
+   - পুরো AWS account-এর সবকিছু control করতে পারে।
+2. Free plan নিলেও credit card কেন চাইতে পারে?
+   - Verification এবং fraud prevention-এর জন্য।
+3. Learning-এর জন্য কোন support plan যথেষ্ট?
+   - Basic Support।
+4. Course follow করার সময় সবচেয়ে বড় safety habit কী?
+   - Resource বানিয়ে practice শেষে cleanup করা।
+
+---
+
+## Lecture 3: AWS Account Activation Troubleshooting
+
+### Lecture Summary
+
+এই lecture resource/article হিসেবে ছিল। মূল topic: AWS account তৈরি করার পর সেটা fully activated হয়েছে কি না নিশ্চিত করা।
+
+AWS account create করলেই সবসময় সাথে সাথে fully active হয় না। কয়েক মিনিট লাগতে পারে, কখনও ২৪ ঘণ্টা পর্যন্ত লাগতে পারে।
+
+### Key Ideas
+
+- Activation email পাওয়া গুরুত্বপূর্ণ
+- Basic/Free Support Plan choose করতে হবে
+- Activation কয়েক মিনিট থেকে ২৪ ঘণ্টা লাগতে পারে
+- Payment method issue থাকলে activation delay হতে পারে
+- Bank authorization block করলেও সমস্যা হতে পারে
+- Need হলে AWS Support contact করতে হবে
+
+### Mentor Explanation
+
+Account created আর account activated একই জিনিস নয়।
+
+- **Account created** = আপনি signup form submit করেছেন
+- **Account activated** = AWS account ready এবং AWS services ব্যবহার করা যাবে
+
+Activation email-এ সাধারণত welcome/thank you/start using your account টাইপের message থাকে।
+
+### Troubleshooting Checklist
+
+যদি account active না হয়:
+
+1. Email inbox check করুন
+2. Spam/Junk folder check করুন
+3. Basic Support plan select করেছেন কি না দেখুন
+4. Payment method valid কি না check করুন
+5. Bank AWS authorization block করেছে কি না দেখুন
+6. AWS কোনো extra information চেয়েছে কি না email check করুন
+7. ২৪ ঘণ্টার বেশি হলে AWS Support contact করুন
+
+### Security Warning
+
+AWS Support-এর সাথে কথা বলার সময় কখনও এগুলো share করবেন না:
+
+- Password
+- Credit card number
+- Secret key
+- Access key
+- MFA code
+
+Legitimate support এগুলো চাইবে না।
+
+### Real-Life Example
+
+নতুন bank account খোলার মতো ভাবুন।
+
+- Form submit করা = account created
+- Bank verification complete = account activated
+- Confirmation message পাওয়া = আপনি এখন account ব্যবহার করতে পারবেন
+
+AWS activation-ও একই ধরনের background verification process।
+
+### Senior Engineer Advice
+
+Cloud troubleshooting করার সময় status verify করার habit বানান।
+
+এই case-এ প্রশ্নগুলো:
+
+- Account created হয়েছে?
+- Email verified?
+- Payment method accepted?
+- Support plan selected?
+- Activation email এসেছে?
+
+এই structured debugging mindset future AWS work-এ খুব কাজে লাগবে।
+
+### Mini Quiz
+
+1. AWS account fully ready হয়েছে কীভাবে বুঝবেন?
+   - Activation/confirmation email পাবেন।
+2. Learning-এর জন্য কোন support plan যথেষ্ট?
+   - Basic বা Free Support Plan।
+3. Activation delay হলে কতক্ষণ wait করা reasonable?
+   - ২৪ ঘণ্টা পর্যন্ত।
+4. Support-এ কী sensitive information দেওয়া যাবে না?
+   - Password, credit card number, secret/access key, MFA code।
+
+---
+
+## Next Lecture Template
+
+Use this structure for each successfully read and explained lecture:
+
+```md
+## Lecture X: Lecture Title
+
+### Lecture Summary
+
+### Key Ideas
+
+### Mentor Explanation
+
+### Example
+
+### Senior Engineer Advice
+
+### Mini Quiz
+```
