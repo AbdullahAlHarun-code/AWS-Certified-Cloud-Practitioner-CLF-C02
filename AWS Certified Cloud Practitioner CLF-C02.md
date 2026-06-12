@@ -542,6 +542,149 @@ Download -> Organize -> Review -> Rewrite in your own words
 
 ---
 
+## Lecture 7: Traditional IT Overview
+
+### Lecture Summary
+
+এই lecture-এ cloud computing বোঝার আগে traditional IT কীভাবে কাজ করত সেটা explain করা হয়েছে। আগে company বা website owner-রা নিজেরাই server কিনে বাসা, garage, office বা data center-এ রাখত। Website grow করলে আরও server কিনতে হতো, setup করতে হতো, power/cooling/maintenance manage করতে হতো, এবং 24/7 monitoring করতে হতো।
+
+এই approach কাজ করত, কিন্তু scale, cost, maintenance, disaster recovery - সবকিছু কঠিন ছিল। Cloud computing এসেছে এই painগুলো externalize বা outsource করার জন্য।
+
+### Key Ideas
+
+- Client browser server-এ request পাঠায়
+- Network data packet server পর্যন্ত route করে
+- Client এবং server দুজনেরই IP address থাকে
+- Server-এর main parts: CPU, RAM, storage, database, networking
+- Router data packet network-এর মধ্যে forward করে
+- Switch local network-এর সঠিক machine-এ packet পাঠায়
+- Traditional IT-তে physical server কিনে নিজে manage করতে হয়
+- Data center চালাতে rent, power, cooling, maintenance লাগে
+- Scaling slow এবং expensive
+- Disaster হলে system down হতে পারে
+- Cloud এই infrastructure burden কমায়
+
+### Mentor Explanation
+
+এই lecture cloud শেখার foundation। Cloud বুঝতে হলে আগে বুঝতে হবে cloud আসার আগে problem কী ছিল।
+
+একটা website দেখতে গেলে browser server-এর কাছে request পাঠায়। Server response দিলে আপনি page দেখেন। মাঝখানে network data packet route করে।
+
+Simple model:
+
+```text
+Browser/Client -> Network -> Server -> Network -> Browser/Client
+```
+
+এই process postal mail-এর মতো:
+
+- Letter = data
+- Sender address = client IP
+- Receiver address = server IP
+- Post office network = internet/network routing
+- Reply letter = server response
+
+### Server কী দিয়ে তৈরি
+
+Server আসলে powerful computer। এর মধ্যে থাকে:
+
+- **CPU**: computation বা processing করে
+- **RAM/Memory**: fast temporary memory
+- **Storage**: file/data long-term রাখে
+- **Database**: structured data রাখে, search/query করা যায়
+- **Networking**: অন্য machines/users-এর সাথে connect করে
+
+এই same building blocks cloud-এও থাকবে। AWS শুধু এগুলোকে managed/on-demand way-তে দেয়।
+
+### Router vs Switch
+
+Router:
+
+- Network-এর মধ্যে data packet কোথায় যাবে সেটা decide করে
+- Internet-level routing-এ সাহায্য করে
+
+Switch:
+
+- Local network-এর ভিতরে packet সঠিক device/server-এ পাঠায়
+
+Simple analogy:
+
+```text
+Router -> শহরের কোন এলাকায় যাবে ঠিক করে
+Switch -> ওই এলাকার কোন বাড়িতে যাবে ঠিক করে
+```
+
+### Traditional IT Problem
+
+আগে company server কিনে নিজের office/data center-এ রাখত। শুরুতে ১টা server enough হতে পারে। কিন্তু user বাড়লে:
+
+- আরও server কিনতে হয়
+- delivery/setup করতে সময় লাগে
+- rack/cable/configuration করতে হয়
+- electricity bill বাড়ে
+- cooling দরকার হয়
+- hardware নষ্ট হলে repair করতে হয়
+- 24/7 monitoring team দরকার হয়
+- fire, power outage, flood, earthquake হলে disaster risk থাকে
+
+এই সব কাজ software team-এর main business না হলেও manage করতে হতো। Cloud এখানে বড় relief।
+
+### Real-World Example
+
+ধরুন আপনি একটা ticket booking website চালাচ্ছেন।
+
+Normal দিনে ১,০০০ user আসে। কিন্তু ঈদের আগে ৫০,০০০ user একসাথে আসে।
+
+Traditional IT:
+
+- আগেই অনেক server কিনে রাখতে হবে
+- server কম হলে site down
+- server বেশি কিনলে normal দিনে unused পড়ে থাকবে
+
+Cloud:
+
+- demand বাড়লে resource বাড়ানো যায়
+- demand কমলে resource কমানো যায়
+- physical hardware কিনতে হয় না
+
+### Senior Engineer Advice
+
+Cloud computing-এর value শুধু “server অন্যের computer-এ চলছে” না। আসল value হলো:
+
+```text
+on-demand infrastructure + fast scaling + less hardware management
+```
+
+এই lecture-এর mental model মনে রাখুন:
+
+```text
+Traditional IT = you own and manage the hardware
+Cloud = you rent/use infrastructure on demand
+```
+
+Exam-এ traditional IT বনাম cloud-এর comparison আসতে পারে। Key words দেখবেন:
+
+- upfront cost
+- maintenance
+- scaling
+- elasticity
+- disaster recovery
+- data center
+- on-demand
+
+### Mini Quiz
+
+1. Server-এর main components কী কী?
+   - CPU, RAM, storage, database, networking।
+2. Router কী করে?
+   - Data packet network-এর মধ্যে forward/route করে।
+3. Traditional IT-তে scaling কেন কঠিন?
+   - নতুন server কিনতে, install করতে, power/cooling/manage করতে সময় ও টাকা লাগে।
+4. Cloud কেন useful?
+   - Hardware manage না করে on-demand infrastructure ব্যবহার করা যায়।
+
+---
+
 ## Next Lecture Template
 
 Use this structure for each successfully read and explained lecture:
