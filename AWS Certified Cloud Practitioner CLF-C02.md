@@ -452,6 +452,96 @@ Small daily progress > random long study sessions
 
 ---
 
+## Lecture 6: Code & Slides Download
+
+### Lecture Summary
+
+এই lecture-এ instructor course material download করার link দিয়েছেন। এখানে code এবং slides পাওয়া যাবে। Lecture content-এ বলা হয়েছে এই link ব্যবহার করে course-এর materials download করা যায়:
+
+```text
+https://courses.datacumulus.com/downloads/certified-cloud-practitioner-zb2/
+```
+
+Udemy lecture resource হিসেবেও **Course Material Download** button আছে।
+
+### Key Ideas
+
+- Course slides এবং code আলাদা download resource হিসেবে দেওয়া আছে
+- Slides review করার জন্য useful
+- Code/resources hands-on lecture follow করার সময় কাজে লাগবে
+- Course material local machine-এ organize করে রাখা ভালো
+
+### Mentor Explanation
+
+AWS শেখার সময় slides খুব useful, কারণ AWS service অনেক। Video দেখে সব মনে রাখা কঠিন। Slides হলো আপনার quick reference map।
+
+কিন্তু একটা trap আছে: শুধু slides download করে রেখে দিলে শেখা হয় না। এগুলো actively ব্যবহার করতে হবে।
+
+ভালো ব্যবহার:
+
+- Lecture শেষে slides খুলে ৫ মিনিট review
+- Important AWS service name highlight
+- Exam keyword note করা
+- Hands-on-এর আগে resource/code দেখে নেওয়া
+
+### Suggested Folder Organization
+
+আপনার local machine-এ এইভাবে folder রাখতে পারেন:
+
+```text
+AWS-Certified-Cloud-Practitioner-CLF-C02/
+  notes/
+    AWS Certified Cloud Practitioner CLF-C02.md
+  slides/
+  code/
+  practice/
+```
+
+এতে course চলার সাথে সাথে সবকিছু clean থাকবে।
+
+### Example
+
+ধরুন পরে S3 lecture দেখছেন। Slides থেকে আপনি দ্রুত দেখে নিতে পারবেন:
+
+```text
+S3 -> object storage
+Bucket -> object রাখার container
+Object -> actual file/data
+```
+
+তারপর আপনার notes file-এ নিজের ভাষায় লিখবেন:
+
+```text
+S3 হলো AWS-এর file/object রাখার managed storage service।
+```
+
+এই ছোট translation step-টাই learning solid করে।
+
+### Senior Engineer Advice
+
+Resource download করা learning-এর শুরু, শেষ না। Senior engineer হিসেবে আমি সবসময় বলব: reference material রাখুন, কিন্তু নিজের note বানান।
+
+কারণ exam এবং real work-এ আপনাকে শুধু definition বলতে হবে না; problem দেখে service চিনতে হবে।
+
+Rule:
+
+```text
+Download -> Organize -> Review -> Rewrite in your own words
+```
+
+### Mini Quiz
+
+1. Course material কোথা থেকে download করা যায়?
+   - Lecture-এর download link বা Udemy resource button থেকে।
+2. Slides কেন useful?
+   - Quick review, service map, এবং exam keyword মনে রাখার জন্য।
+3. শুধু slides download করলেই কি শেখা complete?
+   - না, নিজের ভাষায় note ও practice দরকার।
+4. Best workflow কী?
+   - Download, organize, review, তারপর নিজের ভাষায় rewrite।
+
+---
+
 ## Next Lecture Template
 
 Use this structure for each successfully read and explained lecture:
