@@ -356,6 +356,102 @@ Rule of thumb:
 
 ---
 
+## Lecture 5: About Your Instructor
+
+### Lecture Summary
+
+এই lecture-এ instructor Stephane Maarek নিজের background introduce করেছেন। তিনি AWS certifications এবং Apache Kafka নিয়ে কাজ করেন ও শেখান। তার career background-এর মধ্যে data analyst, big data engineer, developer, এবং solutions architect role ছিল।
+
+এই lecture-এর সবচেয়ে গুরুত্বপূর্ণ learning point হলো: course শুরু করার আগে নিজের goal set করা।
+
+### Key Ideas
+
+- Instructor: Stephane Maarek
+- Expertise: AWS certifications এবং Apache Kafka
+- Professional background: data analyst, big data engineer, developer, solutions architect
+- Instructor LinkedIn এবং Instagram-এ student/community updates share করেন
+- Course শেষ করার জন্য goal set করা দরকার
+- Video যতবার দরকার repeat করা যায়
+- Speed slow/fast করে নিজের learning pace ঠিক করা যায়
+
+### Mentor Explanation
+
+এটা technical AWS lecture না, কিন্তু mindset-setting lecture। একজন instructor কে বুঝে নেওয়া useful, কারণ আপনি জানেন তিনি কোন lens থেকে শেখাচ্ছেন।
+
+Stephane-এর background mixed:
+
+- Data analyst হিসেবে data বুঝেছেন
+- Big data engineer হিসেবে large-scale system দেখেছেন
+- Developer হিসেবে application বানিয়েছেন
+- Solutions architect হিসেবে system design করেছেন
+
+AWS শেখার জন্য এই background useful, কারণ AWS শুধু button-click শেখা নয়। Real-world AWS মানে system design, cost, security, scaling, reliability - সব একসাথে ভাবা।
+
+### Goal Setting
+
+Instructor বলছেন course শুরুর আগে goal set করতে। এটা খুব গুরুত্বপূর্ণ।
+
+Bad goal:
+
+```text
+আমি AWS শিখব।
+```
+
+Better goal:
+
+```text
+আমি ৩ সপ্তাহে Cloud Practitioner course শেষ করব, প্রতিদিন ৪৫ মিনিট পড়ব, এবং প্রতি section শেষে quiz দেব।
+```
+
+Goal যত specific হবে, finish করার chance তত বাড়বে।
+
+### Practical Study Plan
+
+আপনার জন্য simple plan:
+
+1. প্রতিদিন ৩০-৬০ মিনিট AWS পড়বেন
+2. প্রতিটি lecture শেষে ৩-৫ line note লিখবেন
+3. প্রতিটি service-এর জন্য লিখবেন: service name, কাজ, example
+4. সপ্তাহে একদিন previous notes revise করবেন
+5. Exam-এর আগে practice test দেবেন
+
+### Example
+
+ধরুন আপনি ৩ সপ্তাহে course শেষ করতে চান।
+
+```text
+Week 1 -> Cloud basics, IAM, EC2
+Week 2 -> S3, databases, networking, security
+Week 3 -> billing, support, review, practice exam
+```
+
+এটা exact course structure না, কিন্তু goal-setting mindset বোঝার জন্য ভালো model।
+
+### Senior Engineer Advice
+
+Cloud শেখার সময় consistency বেশি গুরুত্বপূর্ণ। একদিনে ৬ ঘণ্টা দেখে তারপর ১০ দিন gap দিলে brain context হারায়। প্রতিদিন কম হলেও নিয়মিত শেখা ভালো।
+
+AWS শেখার জন্য আমার rule:
+
+```text
+Small daily progress > random long study sessions
+```
+
+আর একটা কথা: video repeat করতে লজ্জা নেই। Hard topic একাধিকবার দেখা normal। Senior engineer-রাও documentation বারবার পড়ে।
+
+### Mini Quiz
+
+1. Instructor-এর main expertise কী?
+   - AWS certifications এবং Apache Kafka।
+2. Goal setting কেন দরকার?
+   - Course শেষ করার chance বাড়ে এবং learning focused থাকে।
+3. Bad goal আর good goal-এর পার্থক্য কী?
+   - Good goal specific, measurable, এবং time-bound।
+4. Hard topic বুঝতে না পারলে কী করবেন?
+   - Video repeat করবেন, speed কমাবেন, transcript দেখবেন, note লিখবেন।
+
+---
+
 ## Next Lecture Template
 
 Use this structure for each successfully read and explained lecture:
