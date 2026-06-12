@@ -276,6 +276,86 @@ Cloud troubleshooting করার সময় status verify করার habit �
 
 ---
 
+## Lecture 4: Important Message
+
+### Lecture Summary
+
+এই lecture-এ instructor course শেখার জন্য Udemy-এর learning tools ব্যবহার করার পরামর্শ দিয়েছেন। মূল focus হলো: video speed adjust করা, subtitles/CC ব্যবহার করা, transcript পড়ে follow করা, এবং course feedback/rating দেওয়া।
+
+এটা AWS technical lecture না, কিন্তু learning process ঠিক করার জন্য important।
+
+### Key Ideas
+
+- Instructor normal speed-এ কথা বলবেন
+- Video speed 2x পর্যন্ত বাড়ানো যায়
+- দরকার হলে speed 0.5x পর্যন্ত কমানো যায়
+- CC icon দিয়ে professional subtitles enable করা যায়
+- Transcript পড়ে video follow করলে learning ভালো হতে পারে
+- Udemy feedback চাইলে ready না হলে "Ask Me Later" বেছে নেওয়া যায়
+- Ready হলে rating/review দেওয়া যায়
+
+### Mentor Explanation
+
+AWS শেখার সময় শুধু content দেখা যথেষ্ট না। আপনাকে নিজের learning setup optimize করতে হবে।
+
+যদি কোনো topic সহজ লাগে, speed 1.25x বা 1.5x করতে পারেন। কিন্তু নতুন concept যেমন IAM, VPC, networking, billing, security এলে speed কমিয়ে normal বা 0.75x করা ভালো।
+
+Transcript ব্যবহার করলে তিনটা সুবিধা হয়:
+
+- Unknown word চোখে দেখা যায়
+- Important keyword লিখে রাখা যায়
+- Exam term বারবার review করা যায়
+
+### Practical Learning Strategy
+
+প্রতিটি lecture-এর জন্য এই routine follow করুন:
+
+1. প্রথমবার normal speed-এ দেখুন
+2. Transcript পাশে রাখুন
+3. নতুন AWS service নাম note করুন
+4. Service-এর কাজ এক লাইনে লিখুন
+5. Lecture শেষে mini quiz দিয়ে নিজেকে test করুন
+
+### Example
+
+যদি lecture-এ instructor বলেন **EC2 is a virtual server in the cloud**, তাহলে note করবেন:
+
+```text
+EC2 -> cloud virtual server -> application run করার জন্য compute service
+```
+
+যদি বলেন **S3 is object storage**, note করবেন:
+
+```text
+S3 -> object storage -> file, image, backup, static asset রাখার জন্য
+```
+
+এইভাবে transcript শুধু পড়ার জিনিস না; এটা আপনার exam keyword map বানানোর raw material।
+
+### Senior Engineer Advice
+
+যখন technical course শিখবেন, speed control smartly ব্যবহার করবেন। সব lecture 2x-এ দেখলে মনে হবে দ্রুত এগোচ্ছেন, কিন্তু deep concepts মিস হতে পারে। আবার সবকিছু 0.5x-এ দেখলে momentum হারাবেন।
+
+Rule of thumb:
+
+- Intro/review lecture -> 1.25x বা 1.5x
+- New technical concept -> 1x
+- Hard topic -> 0.75x এবং transcript
+- Hands-on lab -> pause, follow, verify
+
+### Mini Quiz
+
+1. Video fast মনে হলে কী করবেন?
+   - Playback speed কমাবেন।
+2. Instructor slow মনে হলে কী করবেন?
+   - Playback speed বাড়াতে পারেন, যেমন 1.25x বা 1.5x।
+3. Transcript কেন useful?
+   - Keyword দেখা, note নেওয়া, এবং concept review করার জন্য।
+4. Hard AWS topic শেখার সময় best approach কী?
+   - Normal/slow speed, transcript, pause, এবং নিজের note।
+
+---
+
 ## Next Lecture Template
 
 Use this structure for each successfully read and explained lecture:
