@@ -685,6 +685,231 @@ Exam-এ traditional IT বনাম cloud-এর comparison আসতে পা
 
 ---
 
+## Lecture 8: What is Cloud Computing?
+
+### Lecture Summary
+
+এই lecture-এ cloud computing-এর মূল definition, cloud-এর practical meaning, cloud types, cloud characteristics, এবং cloud computing-এর advantages explain করা হয়েছে।
+
+Cloud computing হলো **on-demand delivery** of IT resources: compute power, database, storage, applications, এবং অন্যান্য IT services। সবচেয়ে গুরুত্বপূর্ণ keyword হলো **on-demand** এবং **pay-as-you-go**।
+
+### Key Ideas
+
+- Cloud computing = on-demand IT resources
+- Pay-as-you-go pricing
+- Resource instantly provision করা যায়
+- AWS hardware/network/data center maintain করে
+- User web interface/API দিয়ে প্রয়োজনমতো resource ব্যবহার করে
+- Cloud types: private cloud, public cloud, hybrid cloud
+- Five characteristics: on-demand self-service, broad network access, multi-tenancy/resource pooling, rapid elasticity/scalability, measured service
+- Six advantages: CAPEX to OPEX, economies of scale, stop guessing capacity, speed/agility, stop data center maintenance, global deployment
+
+### Mentor Explanation
+
+Cloud computing সহজ করে বললে:
+
+```text
+নিজে server কিনে data center চালানোর বদলে,
+internet দিয়ে প্রয়োজনমতো computing resources rent করা।
+```
+
+Traditional IT-তে আপনাকে server কিনতে হতো। Cloud-এ আপনি কয়েক second/minute-এর মধ্যে server, storage, database, networking resource তৈরি করতে পারেন।
+
+### On-Demand
+
+On-demand মানে: যখন দরকার, তখন resource পাবেন।
+
+Example:
+
+```text
+আজ ১টা server দরকার -> create
+কাল ১০টা server দরকার -> scale out
+পরশু ২টা দরকার -> scale in
+```
+
+Traditional IT-তে এটা করতে server order, delivery, rack, cable, configure করতে হতো। Cloud-এ button/API দিয়ে করা যায়।
+
+### Pay-As-You-Go
+
+Pay-as-you-go মানে আপনি যতটুকু ব্যবহার করবেন, সাধারণত ততটুকুর জন্য pay করবেন।
+
+Example:
+
+- ২ ঘণ্টা server চালালে ২ ঘণ্টার cost
+- Storage ১০ GB ব্যবহার করলে ১০ GB-এর cost
+- Resource delete/stop করলে cost কমে বা বন্ধ হয়, service type অনুযায়ী
+
+এই model startup এবং learning দুই ক্ষেত্রেই powerful, কারণ আগে থেকেই huge hardware investment লাগে না।
+
+### AWS কী করে, আপনি কী করেন
+
+AWS manages:
+
+- Physical data center
+- Physical servers
+- Networking hardware
+- Power/cooling
+- Hardware maintenance
+
+You manage/use:
+
+- কোন resource দরকার
+- কত বড় server দরকার
+- কোন region/service ব্যবহার করবেন
+- application/data/security configuration
+
+### Everyday Cloud Examples
+
+আপনি cloud ব্যবহার করেছেন হয়তো না জেনেই:
+
+- Gmail -> email cloud service
+- Dropbox/Google Drive/iCloud -> cloud storage
+- Netflix -> video streaming on-demand, built on AWS infrastructure
+
+এই services AWS-এর মতো cloud provider না, কিন্তু cloud-based service কীভাবে user experience দেয় সেটা বোঝায়।
+
+### Types of Cloud
+
+#### Private Cloud
+
+Private cloud এক organization-এর জন্য। Public-এর জন্য open না।
+
+Use case:
+
+- Sensitive business workload
+- More control
+- Specific security/compliance need
+
+#### Public Cloud
+
+Public cloud provider third-party company চালায়। Resources internet দিয়ে available।
+
+Examples:
+
+- AWS
+- Microsoft Azure
+- Google Cloud
+
+এই course মূলত AWS public cloud নিয়ে।
+
+#### Hybrid Cloud
+
+Hybrid cloud = private/on-premises infrastructure + public cloud একসাথে।
+
+Example:
+
+```text
+Sensitive database নিজের data center-এ,
+কিন্তু web application AWS cloud-এ।
+```
+
+Benefit:
+
+- Sensitive asset নিজের control-এ থাকে
+- Cloud-এর flexibility/cost benefit পাওয়া যায়
+
+### Five Characteristics of Cloud Computing
+
+1. **On-demand self-service**
+   - User নিজে resource provision করতে পারে, AWS employee দরকার হয় না।
+
+2. **Broad network access**
+   - Network/internet দিয়ে resources access করা যায়।
+
+3. **Multi-tenancy and resource pooling**
+   - অনেক customer একই physical infrastructure share করে, কিন্তু security/privacy আলাদা থাকে।
+
+4. **Rapid elasticity and scalability**
+   - Demand অনুযায়ী resource quickly বাড়ানো/কমানো যায়।
+
+5. **Measured service**
+   - Usage measured হয়, আর billing usage অনুযায়ী হয়।
+
+### Six Advantages of Cloud Computing
+
+#### 1. CAPEX to OPEX
+
+CAPEX = capital expense, বড় upfront hardware খরচ।
+
+OPEX = operational expense, প্রয়োজন অনুযায়ী চলতি খরচ।
+
+Cloud আপনাকে hardware কিনে বসে থাকতে বাধ্য করে না। আপনি rent/use করেন।
+
+#### 2. Economies of Scale
+
+AWS huge scale-এ data center চালায়। অনেক customer একই provider ব্যবহার করে। এই scale-এর কারণে AWS বেশি efficient হতে পারে এবং time-এর সাথে cost advantage দিতে পারে।
+
+#### 3. Stop Guessing Capacity
+
+Traditional IT-তে আগে থেকে guess করতে হতো কত server লাগবে।
+
+Cloud-এ actual demand দেখে scale করা যায়।
+
+#### 4. Speed and Agility
+
+Resource create করতে days/weeks লাগে না। অনেক সময় minutes/seconds লাগে।
+
+#### 5. Stop Maintaining Data Centers
+
+Power, cooling, rack, hardware failure, physical security - এগুলো AWS manage করে।
+
+#### 6. Go Global in Minutes
+
+AWS global infrastructure ব্যবহার করে world-wide application deploy করা যায়।
+
+### Real-World Example
+
+ধরুন আপনি food delivery app বানাচ্ছেন।
+
+Traditional IT:
+
+- আগে server কিনতে হবে
+- capacity guess করতে হবে
+- user বাড়লে slow/down হতে পারে
+- বেশি server কিনলে idle cost
+
+Cloud:
+
+- শুরুতে ছোট server
+- user বাড়লে scale
+- traffic কমলে resource কমানো
+- global users থাকলে অন্য region ব্যবহার করা
+
+### Senior Engineer Advice
+
+Cloud-এর মূল magic হলো server “কোথাও আছে” সেটা নয়। আসল magic:
+
+```text
+on-demand + pay-as-you-go + elasticity + managed infrastructure
+```
+
+Exam-এর জন্য এই keywordগুলো মনে রাখুন:
+
+- On-demand
+- Pay-as-you-go
+- Elasticity
+- Scalability
+- Measured service
+- CAPEX vs OPEX
+- Public/private/hybrid cloud
+- Stop guessing capacity
+- Global in minutes
+
+### Mini Quiz
+
+1. Cloud computing-এর সবচেয়ে গুরুত্বপূর্ণ keyword কী?
+   - On-demand।
+2. Pay-as-you-go মানে কী?
+   - যতটুকু resource ব্যবহার করবেন, usage অনুযায়ী pay করবেন।
+3. Public cloud provider-এর example কী?
+   - AWS, Azure, Google Cloud।
+4. Hybrid cloud কী?
+   - নিজের on-prem/private infrastructure এবং public cloud একসাথে ব্যবহার করা।
+5. Measured service মানে কী?
+   - Usage track/measure হয় এবং billing usage অনুযায়ী হয়।
+
+---
+
 ## Next Lecture Template
 
 Use this structure for each successfully read and explained lecture:
